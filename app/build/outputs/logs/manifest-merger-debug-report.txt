@@ -23,17 +23,17 @@ ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidMa
 		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:6:22-76
 application
 ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:8:5-22:19
-MERGED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/50a816966b3fec516027141e299242cdabd5b8e8/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.1.1] /home/anuj/.android/build-cache/1b04f22e428b0d46d3a40e1c65b25f3262fc825c/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/anuj/.android/build-cache/17475ec82a8b4c94460652adac5acb073f7d1e50/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/anuj/.android/build-cache/ae89c124dd70b583969a7540ffba62c725e2dfab/output/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:transition:25.1.1] /home/anuj/.android/build-cache/32bc0f01272e978867eb678de3af1ab5b9b26adb/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:25.1.1] /home/anuj/.android/build-cache/422d562e554e218da0d12e78c882ff11c5774e1d/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.1] /home/anuj/.android/build-cache/4fa578f0321a26a0605794a6a253388f70476349/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.1] /home/anuj/.android/build-cache/037feeedb5e8420a3984c3a0eb5d8b46a5f70e30/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.1] /home/anuj/.android/build-cache/88ab33877d419aa939a22ebe5bc556f1854a4478/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.1] /home/anuj/.android/build-cache/c8a9e8f69d4d2270266b367afc633cb9df5c2c01/output/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.1] /home/anuj/.android/build-cache/ea14274d2abba86fa8186a85d93ebb3a66d82341/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:25.1.1] /home/anuj/.android/build-cache/e588c132fee365b46fb2e06d9c57138fa33f2871/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/anuj/.android/build-cache/e4a5abddf16aee0839639f2c3d66c37e712881ef/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/anuj/.android/build-cache/d46037b74c5c0091fb580d7e8021cae6dd29cc01/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:transition:25.1.1] /home/anuj/.android/build-cache/203bc4ece1293a10137117b6a788f9d8f09efc88/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:25.1.1] /home/anuj/.android/build-cache/3d5bfab5a40e6b8b93a75572a05c52b917d10cb4/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] /home/anuj/.android/build-cache/64e43c6679fe3cd2dc7f54c22d4cee7d970b5ef0/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] /home/anuj/.android/build-cache/92543d96aab8a64b9b1fbc48732fd8879bed9a29/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] /home/anuj/.android/build-cache/57937a569c0878350e58f0335f146e284a1c08ca/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] /home/anuj/.android/build-cache/e2dd3ecf3cb6aff5a7669cd38912b2dbe4faafc6/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] /home/anuj/.android/build-cache/81f90f331dbbfafc97d2c1625ab492f4dd8324d4/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -41,7 +41,7 @@ MERGED from [com.android.support:support-compat:25.1.1] /home/anuj/.android/buil
 	android:allowBackup
 		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:10:9-44
 	android:theme
 		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:13:9-40
 activity#com.indiansportsnews.attendanceapp.MainActivity
@@ -60,20 +60,20 @@ ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidMa
 		ADDED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/50a816966b3fec516027141e299242cdabd5b8e8/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.1.1] /home/anuj/.android/build-cache/1b04f22e428b0d46d3a40e1c65b25f3262fc825c/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/anuj/.android/build-cache/17475ec82a8b4c94460652adac5acb073f7d1e50/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/anuj/.android/build-cache/ae89c124dd70b583969a7540ffba62c725e2dfab/output/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:recyclerview-v7:25.1.1] /home/anuj/.android/build-cache/6fdada0d22a9d021db5b73299269b3f8f857d79b/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.1.1] /home/anuj/.android/build-cache/32bc0f01272e978867eb678de3af1ab5b9b26adb/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.1.1] /home/anuj/.android/build-cache/422d562e554e218da0d12e78c882ff11c5774e1d/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.1] /home/anuj/.android/build-cache/4fa578f0321a26a0605794a6a253388f70476349/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.1] /home/anuj/.android/build-cache/037feeedb5e8420a3984c3a0eb5d8b46a5f70e30/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.1] /home/anuj/.android/build-cache/88ab33877d419aa939a22ebe5bc556f1854a4478/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.1] /home/anuj/.android/build-cache/c8a9e8f69d4d2270266b367afc633cb9df5c2c01/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.1.1] /home/anuj/.android/build-cache/ea14274d2abba86fa8186a85d93ebb3a66d82341/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.1.1] /home/anuj/.android/build-cache/e588c132fee365b46fb2e06d9c57138fa33f2871/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] /home/anuj/.android/build-cache/e4a5abddf16aee0839639f2c3d66c37e712881ef/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] /home/anuj/.android/build-cache/d46037b74c5c0091fb580d7e8021cae6dd29cc01/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:recyclerview-v7:25.1.1] /home/anuj/.android/build-cache/8cfbfe8b95862e825795c1acc91dfdd7d877aae1/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.1.1] /home/anuj/.android/build-cache/203bc4ece1293a10137117b6a788f9d8f09efc88/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.1.1] /home/anuj/.android/build-cache/3d5bfab5a40e6b8b93a75572a05c52b917d10cb4/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.1] /home/anuj/.android/build-cache/64e43c6679fe3cd2dc7f54c22d4cee7d970b5ef0/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] /home/anuj/.android/build-cache/92543d96aab8a64b9b1fbc48732fd8879bed9a29/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.1] /home/anuj/.android/build-cache/57937a569c0878350e58f0335f146e284a1c08ca/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.1] /home/anuj/.android/build-cache/e2dd3ecf3cb6aff5a7669cd38912b2dbe4faafc6/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.1] /home/anuj/.android/build-cache/81f90f331dbbfafc97d2c1625ab492f4dd8324d4/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/50a816966b3fec516027141e299242cdabd5b8e8/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.1.1] /home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml
 		INJECTED from /home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/AndroidManifest.xml

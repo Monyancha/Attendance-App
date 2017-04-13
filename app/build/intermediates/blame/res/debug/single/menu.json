@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/res/merged/debug/menu/after_selection_menu.xml",
+        "source": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/res/menu/after_selection_menu.xml"
+    },
+    {
         "merged": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/src/main/res/menu/main.xml"
     }

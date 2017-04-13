@@ -1,0 +1,4 @@
+#Thu Apr 13 15:13:06 IST 2017
+base.0=/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

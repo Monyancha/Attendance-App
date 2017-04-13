@@ -2,8 +2,6 @@ package com.indiansportsnews.attendanceapp;
 
 import android.content.Context;
 import android.content.DialogInterface;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -12,10 +10,12 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -33,6 +33,9 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 
+import static com.indiansportsnews.attendanceapp.R.id.tot_att;
+import static com.indiansportsnews.attendanceapp.R.id.tot_point;
+
 public class MainActivity extends AppCompatActivity {
     private ArrayList<String> names = new ArrayList<String>() ;
     private ArrayList<Integer> attendance = new ArrayList<Integer>() ;
@@ -42,29 +45,96 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Integer> ids = new ArrayList<Integer>() ;
     private CustomListAdapter adapter ;
     private SwipeRefreshLayout mySwipeRefreshLayout ;
+    private ArrayList<String> selectedPos = new ArrayList<>() ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mySwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh) ;
-        //fetchData();
         fetchDataRemote() ;
-        ListView listview = (ListView) findViewById(R.id.listview) ;
+        final ListView listview = (ListView) findViewById(R . id. listview) ;
         listview . setOnItemClickListener(new AdapterView.OnItemClickListener () {
             @Override
             public void onItemClick(AdapterView<?> adapterView , View view , int pos , long l) {
                 showOptionsDialog(ids . get(pos));
             }
         } ) ;
+
+        listview.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE_MODAL);
+        // Capture ListView item click
+        listview.setMultiChoiceModeListener(new AbsListView.MultiChoiceModeListener() {
+
+            @Override
+            public void onItemCheckedStateChanged(ActionMode mode,
+                                                  int position, long id, boolean checked) {
+                // Capture total checked items
+                final int checkedCount = listview.getCheckedItemCount();
+                // Set the CAB title according to total checked items
+                mode.setTitle(checkedCount + " Selected");
+                // Calls toggleSelection method from ListViewAdapter Class
+                if(checked)
+                    selectedPos . add(position + "") ;
+                else
+                    selectedPos . remove(position + "") ;
+            }
+
+            @Override
+            public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+                switch (item.getItemId()) {
+
+                    case R.id.present :
+                        String query = "" ;
+                        for(int i = 0 ; i < selectedPos . size() ; i ++) {
+                            int pos = Integer . parseInt(selectedPos.get(i)) ;
+                            query = query + "UPDATE `attendance` SET `att` = " + (attendance . get(pos) + 1) + " , `tot_att` = " + (total_attendance . get(pos) + 1) + " WHERE `id` = " + ids.get(pos) + " ; " ;
+                        }
+                        do_operation(query);
+                        mode.finish();
+                        return true;
+                    case R.id.absent :
+                        query = "" ;
+                        for(int i = 0 ; i < selectedPos . size() ; i ++)  {
+                            int pos = Integer . parseInt(selectedPos.get(i)) ;
+                            query = query + "UPDATE `attendance` SET `tot_att` = " + (total_attendance . get(pos) + 1) + " WHERE `id` = " + ids.get(pos) + " ; " ;
+                        }
+                        do_operation(query);
+                        mode.finish();
+                        return true ;
+                    case R.id.selectAll :
+                        for(int i = 0 ; i < ids . size() ; i ++) {
+                            listview . setItemChecked(i , true);
+                        }
+                    default:
+                        return false;
+                }
+            }
+
+            @Override
+            public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                mode.getMenuInflater().inflate(R.menu.after_selection_menu , menu);
+                return true;
+            }
+
+            @Override
+            public void onDestroyActionMode(ActionMode mode) {
+                // TODO Auto-generated method stub
+                selectedPos . clear();
+            }
+
+            @Override
+            public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+                // TODO Auto-generated method stub
+                return false;
+            }
+        });
+
         mySwipeRefreshLayout.setOnRefreshListener(
             new SwipeRefreshLayout.OnRefreshListener() {
                 @Override
                 public void onRefresh() {
                     fetchDataRemote();
                     mySwipeRefreshLayout . setRefreshing(false) ;
-                    //finish();
-                    //startActivity(getIntent());
                 }
             }
         );
@@ -97,9 +167,9 @@ public class MainActivity extends AppCompatActivity {
         final View view = inflater.inflate(R.layout.dialog_add_new , null) ;
         final EditText ename = (EditText) view . findViewById(R.id.add_name);
         final EditText eatt = (EditText) view . findViewById(R.id.add_att);
-        final EditText etotatt = (EditText) view . findViewById(R.id.tot_att);
+        final EditText etotatt = (EditText) view . findViewById(tot_att);
         final EditText epoint = (EditText) view . findViewById(R.id.add_point);
-        final EditText etotpoint = (EditText) view . findViewById(R.id.tot_point);
+        final EditText etotpoint = (EditText) view . findViewById(tot_point);
 
         if(opt == 1) { // Add
             title = "ADD NEW" ;
@@ -260,61 +330,17 @@ public class MainActivity extends AppCompatActivity {
         alert.show();
     }
 
-    private void fetchData() {
-        AttendanceDbHelper resDbHelper = new AttendanceDbHelper(getApplicationContext());
-        SQLiteDatabase mydb = resDbHelper.getReadableDatabase();
-        String qry = "SELECT * FROM " + AttendanceDbContract.Entry.TABLE_NAME + " ORDER BY " + AttendanceDbContract.Entry.COLUMN_NAME_ID + " DESC ;" ;
-        Cursor c = mydb.rawQuery(qry , null);
-        while(c.moveToNext()) {
-            String name = c.getString(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_NAME));
-            int att = c.getInt(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_ATT));
-            int tot_att = c.getInt(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_TOT_ATT));
-            int point = c.getInt(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_POINTS));
-            int tot_point = c.getInt(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_TOT_POINTS));
-            int id = c.getInt(c.getColumnIndexOrThrow(AttendanceDbContract.Entry.COLUMN_NAME_ID));
-            names . add(name) ;
-            attendance . add(att) ;
-            total_attendance . add(tot_att) ;
-            points . add(point) ;
-            total_points . add(tot_point) ;
-            ids . add(id) ;
-        }
-        try {
-            adapter.notifyDataSetChanged();
-        } catch(Exception ex) {
-
-        }
-        c.close();
-    }
-
     private void insertData(String name , int att , int tot_att , int point , int tot_point) {
-        /*AttendanceDbHelper resDbHelper = new AttendanceDbHelper(getApplicationContext());
-        SQLiteDatabase mydb = resDbHelper.getWritableDatabase();
-        String qry = "INSERT INTO " + AttendanceDbContract.Entry.TABLE_NAME + " ('" + AttendanceDbContract.Entry.COLUMN_NAME_NAME + "' , '" + AttendanceDbContract.Entry.COLUMN_NAME_ATT + "' , '" + AttendanceDbContract.Entry.COLUMN_NAME_TOT_ATT + "' , '" + AttendanceDbContract.Entry.COLUMN_NAME_POINTS + "' , '" + AttendanceDbContract.Entry.COLUMN_NAME_TOT_POINTS + "') VALUES ('" + name + "' , " + att + " , " + tot_att + " , " + point + " , " + tot_point + " ) ;" ;
-        mydb.execSQL(qry);
-        */
         String qry = "INSERT INTO `attendance`(`name` , `att` , `tot_att` , `points` , `tot_points`) VALUES('" + name + "' , " + att + " , " + tot_att + " , " + point + " , " + tot_point + " ) ;" ;
         do_operation(qry);
     }
 
     private void deleteData(int id) {
-        /*
-        AttendanceDbHelper resDbHelper = new AttendanceDbHelper(getApplicationContext());
-        SQLiteDatabase mydb = resDbHelper.getWritableDatabase();
-        String qry = "DELETE FROM " + AttendanceDbContract.Entry.TABLE_NAME + " WHERE " + AttendanceDbContract.Entry.COLUMN_NAME_ID + " = " + id + " ;" ;
-        mydb.execSQL(qry);
-        */
         String qry = "DELETE FROM `attendance` WHERE `id` = " + id + " ;" ;
         do_operation(qry);
     }
 
     private void editData(int id , String name , int att , int tot_att , int point , int tot_point) {
-        /*
-        AttendanceDbHelper resDbHelper = new AttendanceDbHelper(getApplicationContext());
-        SQLiteDatabase mydb = resDbHelper.getWritableDatabase();
-        String qry = "UPDATE " + AttendanceDbContract.Entry.TABLE_NAME + " SET " + AttendanceDbContract.Entry.COLUMN_NAME_NAME + " = '" + name + "' , " + AttendanceDbContract.Entry.COLUMN_NAME_ATT + " = " + att + " , " + AttendanceDbContract.Entry.COLUMN_NAME_TOT_ATT + " = " + tot_att + " , " + AttendanceDbContract.Entry.COLUMN_NAME_POINTS + " = " + point + " , " + AttendanceDbContract.Entry.COLUMN_NAME_TOT_POINTS + " = " + tot_point + " WHERE " + AttendanceDbContract.Entry.COLUMN_NAME_ID + " = " + id + " ;" ;
-        mydb.execSQL(qry);
-        */
         String qry = "UPDATE `attendance` SET `name` = '" + name + "' , `att` = " + att + " , `tot_att` = " + tot_att + " , `points` = " + point + " , `tot_points` = " + tot_point + " WHERE `id` = " + id + " ;" ;
         do_operation(qry);
     }
@@ -383,7 +409,6 @@ public class MainActivity extends AppCompatActivity {
                     if (n == 0)
                         return null;
                     w = new wrapper[n];
-                    //int lastId = SaveSharedPreferences . getLastId(getApplicationContext()) ;
                     for (int i = 0; i < n; i++) {
                         final JSONObject att_status = geodata.getJSONObject(i);
                         w[i] = new wrapper() ;
@@ -415,7 +440,6 @@ public class MainActivity extends AppCompatActivity {
             protected void onPostExecute(wrapper[] w) {
                 super.onPostExecute(w) ;
                 mySwipeRefreshLayout . setRefreshing(false) ;
-                //dialog . dismiss() ;
                 if(w != null) {
                     ids . clear() ;
                     names . clear() ;
@@ -437,7 +461,7 @@ public class MainActivity extends AppCompatActivity {
                         ex . printStackTrace();
                     }
                     adapter = new CustomListAdapter(MainActivity.this , names , attendance , total_attendance , points , total_points) ;
-                    ListView listview = (ListView) findViewById(R.id.listview) ;
+                    ListView listview = (ListView) findViewById(R . id . listview) ;
                     try {
                         listview.setAdapter(adapter);
                     } catch(Exception ex) {
@@ -461,7 +485,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                //mySwipeRefreshLayout . setRefreshing(true) ;
             }
 
             @Override

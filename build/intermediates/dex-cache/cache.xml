@@ -3,93 +3,93 @@
 
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/8cfbfe8b95862e825795c1acc91dfdd7d877aae1/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.1.1_c5ba02d3d112d79a4d2cf2d0f219194d15be9506.jar" />
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_3fc7d6f0f0c3af73aea230a8807c03179f1f8695.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.1.1_86d28316d61a2c65253941dd7c5c42b48cc13820.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.1.1_3784a04a16f802fe554f28176d823514c0d901b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/design/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.1.1_43df8d04665ef41bfe329e453fa8471b862d0fbd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.1.1_942d5620c4b267659534b5e70257b175dec64466.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/3d5bfab5a40e6b8b93a75572a05c52b917d10cb4/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.1.1_7156e62978a518d8d2447cdf72d5f0d5ec5da249.jar" />
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_c1c3c3adc9990593657b7fa366745fbef73f32ce.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/64e43c6679fe3cd2dc7f54c22d4cee7d970b5ef0/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.1.1_78952fd070a18fcf99f36e655a1058a4becb8507.jar" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_abb77f1411cd7de0be2849e20530f0df4a631da4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/d46037b74c5c0091fb580d7e8021cae6dd29cc01/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.1.1_191b9fd41afd17725145d387163b171743417ffc.jar" />
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_707ca0192f04fd1b72b0d6f7a305c7aabb5e90b1.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/81f90f331dbbfafc97d2c1625ab492f4dd8324d4/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.1.1_aa6bd8d1d689666bd26d314fa816a877639e00e9.jar" />
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_1348779d5f9823e80a3f76cff9268ba0f853cc25.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/57937a569c0878350e58f0335f146e284a1c08ca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_60684fbf23f5758d77004f2aa28cff3bbbae429b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/anuj/.android/build-cache/e2dd3ecf3cb6aff5a7669cd38912b2dbe4faafc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_33033ab5b696e81ac12cc6b086b11dc97dfc758a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_43b78e3f70a48e9e1d1167cf72c6206fd5284206.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/anuj/.android/build-cache/92543d96aab8a64b9b1fbc48732fd8879bed9a29/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_6b3c37a0b4f0a14f7c6b1b8795fd149ec1357fcc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/anuj/.android/build-cache/203bc4ece1293a10137117b6a788f9d8f09efc88/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.1.1_fcfa177ab1c5f953b4ddd4d7c31ca461e9cfaf1f.jar" />
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_8fcc9446340dcd6935592cfb766acc3a226fb9b5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,21 +102,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.1.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.1.1_556e9e70eec637f0bf2108ecda3dd09d260771ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.1/jars/classes.jar"
+        jar="/home/anuj/.android/build-cache/e588c132fee365b46fb2e06d9c57138fa33f2871/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.1.1_b3958000d9f7466a8c53bff279ab4e84e63218c9.jar" />
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_c19123b16d89eadc262a4f11fa9028d377f93a62.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/anuj/.android/build-cache/e4a5abddf16aee0839639f2c3d66c37e712881ef/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/pre-dexed/debug/classes_8551b6d3bd0145c04b405b95c2f2d99d04a6963a.jar" />
     </item>
 
 </items>

@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 212,
+                    "endOffset": 313
+                },
+                "from": {
+                    "file": "/home/anuj/.android/build-cache/52ebb989771bf227f44bcd19f771735e18fbdc49/output/res/values-my/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 285,
+                        "endColumn": 212,
+                        "endOffset": 497
+                    }
+                }
+            }
+        ]
+    }
+]

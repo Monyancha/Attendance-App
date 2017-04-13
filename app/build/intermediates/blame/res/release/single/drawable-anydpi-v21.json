@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/home/anuj/AndroidStudioProjects/AttendanceApp/app/build/intermediates/res/merged/release/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/home/anuj/.android/build-cache/c3da2009fb3270e4b339cdbb458138e367eec684/output/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    }
+]
